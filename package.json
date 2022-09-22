@@ -1,6 +1,6 @@
 {
 	"name": "webcook",
-	"version": "0.0.1w",
+	"version": "0.0.12",
 	"scripts": {
 		"test": "npx mocha --reporter spec"
 	},
