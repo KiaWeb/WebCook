@@ -1,11 +1,10 @@
 const {exec} = require("openssl-wrapper");
-const openssl = exec;
 const password = '';
 const http = require("http");
 const https = require("https");
 function generate(logBuffer) {
   if (logBuffer) {
-    return openssl('genrsa', {des3: true, passout: `pass:${password}`, '2048': false}, function(err, buffer) {
+    return exec('genrsa', {des3: true, passout: `pass:${password}`, '2048': false}, function(err, buffer) {
 	    if (err) {
 		    console.log("[WebCook] Error");
 	    };
@@ -15,7 +14,7 @@ function generate(logBuffer) {
     });
   };
   if (!logBuffer) {
-    return openssl('genrsa', {des3: true, passout: `pass:${password}`, '2048': false}, function(err, buffer) {
+    return exec('genrsa', {des3: true, passout: `pass:${password}`, '2048': false}, function(err, buffer) {
 	    if (err) {
 		    console.log("[WebCook] Error");
 	    }
