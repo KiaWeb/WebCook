@@ -1,5 +1,6 @@
 const {exec} = require("openssl-wrapper");
 const openssl = exec;
+const password = '';
 const http = require("http");
 const https = require("https");
 function generate(logBuffer) {
