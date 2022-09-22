@@ -14,3 +14,5 @@ function generate(logBuffer) {
   };
     
 };
+expt = [generate];
+module.exports = expt;
