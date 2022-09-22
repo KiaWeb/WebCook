@@ -2,7 +2,9 @@ name: webcook
 
 on:
   release:
-    types: [created]
+    branches:
+      - main
+      - master
 
 jobs:
   build:
