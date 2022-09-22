@@ -1,1 +1,1 @@
-console.log("WebCook is not ready yet.");
+console.log("WebCook is a beta package and is not ready yet.");
