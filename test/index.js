@@ -1,1 +1,1 @@
-console.log("Woo-hoo!");
+require("../index.js");
