@@ -3,8 +3,9 @@
 	"version": "0.0.13",
 	"scripts": {
 		"test": "npm run babeltest && npx mocha --reporter spec",
-		"babeltest": "sudo npx babel lib -d test",
-		"babel": "sudo npx babel lib -d src"
+		"babelfix": "npm uninstall babel",
+		"babeltest": "npm run babelfix && sudo npx babel lib -d test",
+		"babel": "npm run babelfix && sudo npx babel lib -d src"
 	},
 	"dependencies": {
 		"mocha": "^10.0.0",
