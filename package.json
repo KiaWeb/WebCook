@@ -1,9 +1,10 @@
 {
 	"name": "webcook",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"scripts": {
-		"test": "npm run babel && npx mocha --reporter spec",
-		"babel": "babel index.js -d lib && babel index.js -d test"
+		"test": "npm run babeltest && npx mocha --reporter spec",
+		"babeltest": "babel index.js -d test",
+		"babel": "babel index.js -d src"
 	},
 	"dependencies": {
 		"mocha": "^10.0.0",
