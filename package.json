@@ -3,8 +3,8 @@
 	"version": "0.0.13",
 	"scripts": {
 		"test": "npm run babeltest && npx mocha --reporter spec",
-		"babeltest": "babel index.js -d test",
-		"babel": "babel index.js -d src"
+		"babeltest": "babel lib -d test",
+		"babel": "babel lib -d src"
 	},
 	"dependencies": {
 		"mocha": "^10.0.0",
