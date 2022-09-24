@@ -14,9 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - uses: bahmutov/npm-install@v1
-        with:
+      - with:
           node-version: 16
+      - uses: bahmutov/npm-install@v1
+      - with:
+          install-command: --package-lock-only
       - run: npm ci
       - run: npm test
   
