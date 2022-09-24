@@ -22,7 +22,6 @@ jobs:
       - run: npm ci
       - run: npm test
   
-  name: XFix
   babel:
     needs: build-test
     runs-on: ubuntu-latest
