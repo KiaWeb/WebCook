@@ -1,11 +1,8 @@
 {
 	"name": "webcook",
-	"version": "0.0.18",
+	"version": "0.0.19",
 	"scripts": {
-		"test": "npm run babeltest && npx mocha --reporter spec",
-		"babelfix": "npm uninstall babel",
-		"babeltest": "npm run babelfix && sudo npx babel lib -d test",
-		"babel": "npm run babelfix && sudo npx babel lib -d ."
+		"test": "npx mocha --reporter spec"
 	},
 	"dependencies": {
 		"mocha": "^10.0.0",
