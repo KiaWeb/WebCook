@@ -22,18 +22,8 @@ jobs:
       - run: npm ci
       - run: npm test
   
-  babel:
-    needs: build-test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm run babel
-  
   publish:
-    needs: babel
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
