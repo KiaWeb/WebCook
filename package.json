@@ -1,6 +1,6 @@
 {
 	"name": "webcook",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"scripts": {
 		"test": "npm run babeltest && npx mocha --reporter spec",
 		"babelfix": "npm uninstall babel",
