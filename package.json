@@ -4,7 +4,7 @@
 	"scripts": {
 		"test": "npm run babeltest && npx mocha --reporter spec",
 		"babelfix": "npm uninstall babel",
-		"babeltest": "npm run babelfix && sudo npx babel lib -d test",
+		"babeltest": "npm run babelfix && sudo npx babel . -d test",
 		"babel": "npm run babelfix && sudo npx babel . -d ."
 	},
 	"dependencies": {
